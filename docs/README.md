@@ -13,7 +13,7 @@ Give the application a shot at []()
 []
 
 ## The Team
-- [](https://github.com/
+- [Maria Cabraldi](https://github.com/MariaEGC/)
 - [Michael Boynton](https://github.com/Badger-MchlB)
-- [](https://github.com/)
-- [](https://github.com/)
+- [Anthony Ferreria](https://github.com/)
+- [Jimmy Joseph](https://github.com/)
