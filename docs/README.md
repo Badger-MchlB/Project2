@@ -8,9 +8,9 @@ Give the application a shot at []()
 
 ## Technology Used
 
-[]
-[]
-[]
+[Google API]
+[Weather API]
+[News API]
 
 ## The Team
 - [Maria Cabraldi](https://github.com/MariaEGC/)
