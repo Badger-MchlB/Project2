@@ -1,0 +1,17 @@
+body ,html {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+}
+.header {
+    height: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -13,7 +13,7 @@ Give the application a shot at []()
 [News API]
 
 ## The Team
-- [Maria Cabraldi](https://github.com/MariaEGC/)
+- [Maria Cabral](https://github.com/MariaEGC/)
 - [Michael Boynton](https://github.com/Badger-MchlB)
 - [Anthony Ferreria](https://github.com/)
 - [Jimmy Joseph](https://github.com/)

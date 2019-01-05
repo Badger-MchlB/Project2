@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 offset-md-2">
+      <h3>Notes</h3>
+      <ul>
+        {{#each notes}}
+          {{#unless this.devoured}}
+            <li class="note-list">{{this.notes_name}}
+              <button type="button" class="btn btn-primary devour-btn" data-id="{{id}}">Finished!</button>
+            </li>
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-md-5 offset-md-1">
+      <h3>Finished notes</h3>
+      <ul>
+        {{#each notes}}
+          {{#if this.devoured}}
+            <li class="note-list-eaten">{{this.notes_name}}
+            </li>
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+  <div class="submit-row">
+    <div  class="col-s12">
+      <h4>Create a note</h4>
+        <form action="/notes" method="POST">
+            <input type="text" id="name" name="notes_name" placeholder="">
+            <button type="submit" class="btn btn-danger">Add</button>
+        </form>
+    </div>
+</div>
