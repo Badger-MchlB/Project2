@@ -1,5 +1,3 @@
-
-
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('4be3621334ba4148beb48579cec5d62a');
  
