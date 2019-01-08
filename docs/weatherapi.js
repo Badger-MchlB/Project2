@@ -122,9 +122,11 @@
         }
       };
     });
+    
     // returns object
     return feature;
   };
+  
   // Add the markers to the map
   var drawIcons = function (weather) {
      map.data.addGeoJson(geoJSON);
