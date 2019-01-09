@@ -17,6 +17,9 @@ html, body{
       height: 50%;
       margin: 5%;
       bottom: 5%;
+      position:sticky;
+      bottom:100px;
+      
     }
 .gm-style-iw {
       text-align: center;
@@ -96,7 +99,7 @@ html, body{
     background-color: darkgray;
   }
 
-  .slidein {
+  .slidein {   
     color:darkred;
     animation-duration: 30s;
     animation-name: slidein;
@@ -121,9 +124,29 @@ html, body{
   /* Notes */
 
 #notes{
+  text-align: center;
   color: black;
+  position: relative;
+  left:590px;
+  top:10px;
 }
 
 #btns1{
   color:green;
+}
+
+#name{
+  position: relative;
+  left:900px;
+}
+
+#btns1{
+  position: relative;
+  left:815px;
+  top:40px;
+}
+
+.midalign{
+  text-align:center;
+
 }
