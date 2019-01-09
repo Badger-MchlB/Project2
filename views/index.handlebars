@@ -1,32 +1,30 @@
-    <div class="cards">
+    <h1 class="slidein">Watch me move</h1>
 
+    <div class="popout" id="cards"></div>
+
+    <div id="cards2">
+      <div class="row">
+        <h3 class="midalign">Notes</h3>
+        <ul class="midalign">
+          {{#each notes}}
+          {{#unless this.devoured}}
+          <li class="note-list">{{this.notes_name}}
+            <button type="button" class="btn btn-primary devour-btn" data-id="{{id}}">Finished!</button>
+          </li>
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
     </div>
 
-    <div class="cards2">
-      <div class="container">
-        <div class="row">
-            <h3>Notes</h3>
-            <ul>
-              {{#each notes}}
-              {{#unless this.devoured}}
-              <li class="note-list">{{this.notes_name}}
-                <button type="button" class="btn btn-primary devour-btn" data-id="{{id}}">Finished!</button>
-              </li>
-              {{/unless}}
-              {{/each}}
-            </ul>
-        </div>
-
         <div class="submit-row">
-            <h4>Create a note</h4>
+            <h4 id="notes">Create a Note</h4>
             <form action="/notes" method="POST">
               <input type="text" id="name" name="notes_name" placeholder="">
-              <button type="submit" class="btn btn-danger">Add</button>
+              <button type="submit" id="btns1"class="btn btn-danger">Add</button>
             </form>
           </div>
-        </div>
-      </div>
-
-      <div class="cards3"></div>
+      <div class="popout" id="cards3"></div>
    
   <div id="map-canvas"></div>
+
