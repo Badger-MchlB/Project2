@@ -9,3 +9,4 @@ $(document).on('click', '.devour-btn', function(){
         window.location = "/"
     })
   })
+

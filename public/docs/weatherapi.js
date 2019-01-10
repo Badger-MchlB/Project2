@@ -72,7 +72,7 @@
   };
   
   
-  // Take the JSON results and proccess them
+  // Takes JSON results and proccess them
   var proccessResults = function() {
     console.log(this);
     var results = JSON.parse(this.responseText);
@@ -87,7 +87,7 @@
   var infowindow = new google.maps.InfoWindow();
   
   
-  // For each result that comes back, convert the data to geoJSON
+  //converts data to geoJSON
   var jsonToGeoJson = function (weatherItem) {
     var feature = {
       type: "Feature",

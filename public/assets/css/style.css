@@ -1,5 +1,5 @@
 html{
-   background-image:url("https://www.metoffice.gov.uk/webfiles/1544018228657/images/video/placeholder_thumb_1152x648.jpg");
+   background-image:url("https://avweather.net/wp-content/uploads/2017/02/Storm-Clouds-Over-Wheat-alt-1800x900.jpg");
    background-size: 100%;
    
 }
@@ -8,6 +8,8 @@ html, body{
       height: 100%;
       margin: 0%;
       padding: 0;
+      max-width: 100%;
+      overflow-x: hidden;
     }
 
 
@@ -18,7 +20,7 @@ html, body{
       margin: 5%;
       bottom: 5%;
       position:sticky;
-      bottom:100px;
+      bottom:120px;
       
     }
 .gm-style-iw {
@@ -88,22 +90,22 @@ html, body{
   /* Animations / CSS fun */
 
   #cards:hover{
-    background-color: darkgray;
+    background-color: lightblue;
   }
 
   #cards2:hover{
-    background-color: darkgray;
+    background-color: lightblue;
   }
 
   #cards3:hover{
-    background-color: darkgray;
+    background-color: lightblue;
   }
 
   .slidein {   
     color:darkred;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-name: slidein;
-    animation-iteration-count: 3;
+    animation-iteration-count: infinite;
     animation-direction: infinite;
   }
   
@@ -132,7 +134,8 @@ html, body{
 }
 
 #btns1{
-  color:green;
+    position:relative;
+    right:30%;
 }
 
 #name{
