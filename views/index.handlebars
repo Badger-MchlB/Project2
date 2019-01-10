@@ -1,5 +1,5 @@
-    <div class="cards">
 
+<<<<<<< HEAD
     <div class="container">
         <fieldset>
           <form action="/" method="post">
@@ -13,35 +13,49 @@
 
 
     </div>
+=======
+    <h1 class="slidein">There are no new news?</h1>
+>>>>>>> b7c1996a4d9c63650e4d4b3035a2362258ac4438
 
-    <div class="cards2">
-      <div class="container">
-        <div class="row">
-            <h3>Notes</h3>
-            <ul>
-              {{#each notes}}
-              {{#unless this.devoured}}
-              <li class="note-list">{{this.notes_name}}
-                <button type="button" class="btn btn-primary devour-btn" data-id="{{id}}">Finished!</button>
-              </li>
-              {{/unless}}
-              {{/each}}
-            </ul>
-        </div>
+    <div class="popout" id="cards"></div>
+
+    <div id="cards2">
+      <div class="row">
+        <h3 class="midalign">Notes</h3>
+        <ul class="midalign">
+          {{#each notes}}
+          {{#unless this.devoured}}
+          <li class="note-list">{{this.notes_name}}
+            <button type="button" class="btn btn-primary devour-btn" data-id="{{id}}">Finished!</button>
+          </li>
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
 
         <div class="submit-row">
-            <h4>Create a note</h4>
+            <h4 id="notes">Create a Note</h4>
             <form action="/notes" method="POST">
               <input type="text" id="name" name="notes_name" placeholder="">
-              <button type="submit" class="btn btn-danger">Add</button>
+              <button type="submit" id="btns1" class="btn btn-danger">Add</button>
             </form>
           </div>
-        </div>
-      </div>
-
-      <div class="cards3"></div>
+      <div class="popout" id="cards3"></div>
    
   <div id="map-canvas"></div>
 
+<<<<<<< HEAD
+=======
+<div id="MyClockDisplay" class="clock"></div>
+
+<script type="text/javascript">
+    window._chatlio = window._chatlio||[];
+    !function(){ var t=document.getElementById("chatlio-widget-embed");if(t&&window.ChatlioReact&&_chatlio.init)return void _chatlio.init(t,ChatlioReact);for(var e=function(t){return function(){_chatlio.push([t].concat(arguments)) }},i=["configure","identify","track","show","hide","isShown","isOnline", "page", "open", "showOrHide"],a=0;a<i.length;a++)_chatlio[i[a]]||(_chatlio[i[a]]=e(i[a]));var n=document.createElement("script"),c=document.getElementsByTagName("script")[0];n.id="chatlio-widget-embed",n.src="https://w.chatlio.com/w.chatlio-widget.js",n.async=!0,n.setAttribute("data-embed-version","2.3");
+       n.setAttribute('data-widget-id','ffd17e84-bbe0-4ba3-41c5-1e9e94ab9c15');
+       c.parentNode.insertBefore(n,c);
+    }();
+</script>  
+>>>>>>> b7c1996a4d9c63650e4d4b3035a2362258ac4438
 
 

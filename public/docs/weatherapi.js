@@ -2,7 +2,7 @@
   var geoJSON;
   var request;
   var gettingData = false;
-  var openWeatherMapKey = "6a4b3438dd36e20b1b657ea827abc2f3"
+  var openWeatherMapKey = "e4e214d3a61f6b60ee315a69e0af3b3e"
   
   
   function initialize() {
@@ -14,15 +14,14 @@
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
     
-        // Add interaction listeners to make weather requests
+        // Add listeners to make weather requests
     google.maps.event.addListener(map, 'idle', checkIfDataRequested);
     
-    // Sets up and populates the info window with details
+    // populates the info window with details
     map.data.addListener('click', function(event) {
       infowindow.setContent(
        "<img src=" + event.feature.getProperty("icon") + ">"
        + "<br /><strong>" + event.feature.getProperty("city") + "</strong>"
-       + "<br />" + event.feature.getProperty("temperature") + "&deg;F"
        + "<br />" + event.feature.getProperty("weather")
        );
       infowindow.setOptions({
@@ -56,6 +55,7 @@
     getWeather(NE.lat(), NE.lng(), SW.lat(), SW.lng());
   };
   
+
   // Make the weather request
   var getWeather = function(northLat, eastLng, southLat, westLng) {
     gettingData = true;
@@ -72,7 +72,7 @@
   };
   
   
-  // Take the JSON results and proccess them
+  // Takes JSON results and proccess them
   var proccessResults = function() {
     console.log(this);
     var results = JSON.parse(this.responseText);
@@ -87,7 +87,7 @@
   var infowindow = new google.maps.InfoWindow();
   
   
-  // For each result that comes back, convert the data to geoJSON
+  //converts data to geoJSON
   var jsonToGeoJson = function (weatherItem) {
     var feature = {
       type: "Feature",
@@ -113,7 +113,7 @@
     };
     
     
-    // Set the custom marker icon
+// marker icon
     map.data.setStyle(function(feature) {
       return {
         icon: {
@@ -122,15 +122,19 @@
         }
       };
     });
+    
     // returns object
     return feature;
   };
-  // Add the markers to the map
+  
+  // markers
   var drawIcons = function (weather) {
      map.data.addGeoJson(geoJSON);
+     
      // Set the flag to finished
      gettingData = false;
   };
+
   // Clear data layer and geoJSON
   var resetData = function () {
     geoJSON = {
