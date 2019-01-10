@@ -47,7 +47,7 @@ html, body{
 
   #cards{
     border-radius: 25px;
-    background-color:lightgray;
+    background-color:aliceblue;
         float: right;
         width:35%;
         height:25%;
@@ -59,7 +59,7 @@ html, body{
 
   #cards2{
     border-radius: 25px;
-    background-color:lightgray;
+    background-color:aliceblue;
     float: right;
     position:absolute;
     top:70%;
@@ -73,7 +73,7 @@ html, body{
 
   #cards3{
     border-radius: 25px;
-    background-color:lightgray;
+    background-color:aliceblue;
     float: right;
     position:absolute;
     top:40%;
