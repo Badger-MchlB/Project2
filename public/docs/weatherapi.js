@@ -113,7 +113,7 @@
     };
     
     
-    // Set the custom marker icon
+// marker icon
     map.data.setStyle(function(feature) {
       return {
         icon: {

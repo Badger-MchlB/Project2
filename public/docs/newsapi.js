@@ -1,19 +1,29 @@
-const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('4be3621334ba4148beb48579cec5d62a');
- 
-// To query top headlines
-// All options passed to topHeadlines are optional, but you need to include at least one of them
-newsapi.v2.topHeadlines({
-  q: 'trump',
-  category: 'politics',
-  language: 'en',
-  country: 'us'
-}).then(response => {
-  console.log(response);
-  /*
-    {
-      status: "ok",
-      articles: [...]
-    }
-  */
-});
+function showTime(){
+  var date = new Date();
+  var h = date.getHours();
+  var m = date.getMinutes();
+  var s = date.getSeconds();
+  var session = "AM";
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("MyClockDisplay").innerText = time;
+  document.getElementById("MyClockDisplay").textContent = time;
+  
+  setTimeout(showTime, 1000);
+  
+}
+
+showTime();
