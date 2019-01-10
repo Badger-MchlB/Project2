@@ -1,3 +1,5 @@
+
+
 html{
    background-image:url("https://avweather.net/wp-content/uploads/2017/02/Storm-Clouds-Over-Wheat-alt-1800x900.jpg");
    background-size: 100%;
@@ -10,6 +12,7 @@ html, body{
       padding: 0;
       max-width: 100%;
       overflow-x: hidden;
+      overflow:hidden;
     }
 
 
@@ -56,35 +59,36 @@ html, body{
         margin-right: 5%;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-  }
 
+  }
+  #cards3{
+    border-radius: 25px;
+    background-color:aliceblue;
+    float: right;
+    position:absolute;
+    top:80%;
+    left:5%;
+    width:50%;
+    height:15%;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+  }
 
   #cards2{
     border-radius: 25px;
     background-color:aliceblue;
     float: right;
     position:absolute;
-    top:70%;
-    left:5%;
-    width:35%;
-    height:25%;
-    margin-right: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-  }
-
-  #cards3{
-    border-radius: 25px;
-    background-color:aliceblue;
-    float: right;
-    position:absolute;
-    top:40%;
+    top:60%;
     left:60%;
     width:35%;
     height:25%;
     margin-right: 5%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+
   }
 
   /* Animations / CSS fun */
@@ -156,11 +160,11 @@ html, body{
 
 .clock {
   position: absolute;
-  top: 50%;
-  left: 78%;
+  top: 55%;
+  left: 50%;
   transform: translateX(-50%) translateY(-50%);
   color: black;
-  font-size: 60px;
+  font-size: 40px;
   font-family: Orbitron;
   letter-spacing: 7px;
 
