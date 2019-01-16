@@ -11,6 +11,7 @@ Give the application a shot at []()
 [Google API]
 [Weather API]
 [News API]
+[Chatlio](https://chatlio.com/)
 
 ## The Team
 - [Maria Cabral](https://github.com/MariaEGC/)
